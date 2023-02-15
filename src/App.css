@@ -1,38 +1,136 @@
-.App {
+
+*{
+  margin: o;
+  padding: 0;
+  
+
+}
+body{
+  background-color: #a2c6cf;
+  flex-wrap:wrap;
+}
+
+
+.container {  
+  width: 100%;  
+  min-height: 100vh;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  background: linear-gradient(to right bottom, rgb(164, 133, 67)); 
+  background: rgba(38, 112, 172, 0.098);
+ } 
+ 
+.app-wrapper{
+  background-color: rgb(38, 112, 172);
+  min-width: 400px;
+  min-height: 500px;
+  padding: 30px;
+  margin: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 3px 6px 40px rgba(21, 93, 164, 0.959);
+
+}
+
+.header h1{
+  color: rgb(198, 237, 237);
   text-align: center;
+  margin:30px 0;
+  
+}
+.task-input {
+  outline: none;
+  width: 260px;
+  padding: 10px;
+  margin-right: 5px;
+  font-size: 10px;
+  color: #dbe6dc;
+  background-color: rgb(40, 89, 89);
+  border: 1px solid #b7de1b70;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-add {
+  width: 50px;
+  padding: 10px 10px;
+  font-size: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(208, 208, 22, 0.678);
+
+  
+  background-color: rgb(242, 163, 60);
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+.button-complete,
+.button-delet,
+.button-edit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 20px;
+  border-radius: 50%;
+
+}
+.button-complete{
+  color: rgb(18, 205, 90);
+  margin-right: 1px;
+  width: fit-content;
+  
+
+}
+.button-edit{
+  color: rgb(208, 243, 8);
+  margin-right: 1px;
+  width: fit-content;
+
+}
+
+.button-delet{
+  color: rgb(234, 91, 8);
+  margin-right: 1px;
+  width: fit-content;
+}
+
+.complete{
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: rgb(152, 72, 48);
+}
+.list{
+  width: 220px;
+  background-color: #969881;
+  font-size: 12px;
+  padding-left: 7px;
+  margin-right: 10px;
+  margin-top: 2px;
+  
+}
+  .list-item{
+    list-style: "📌";
+    margin-top: 1px;
+    
+    
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input:focus,button:focus{
+  outline: none;
 }
+button, input, optgroup, select, textarea {
+  margin: 4px;
+  font-family: cursive;
+  font-size: inherit;
+  line-height: inherit;
+  width: 241px;
+  border-radius: 5px;
+  background-color:  rgb(204, 217, 227);
+}
+ 
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
