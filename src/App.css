@@ -22,14 +22,13 @@ body{
  } 
  
 .app-wrapper{
-  background-color: rgb(38, 112, 172);
-  min-width: 400px;
-  min-height: 500px;
-  padding: 30px;
-  margin: 30px;
+  
+  min-width: 100px;
+  padding: 20px;
+  margin: 20px;
   box-sizing: border-box;
   border-radius: 15px;
-  box-shadow: 3px 6px 40px rgba(21, 93, 164, 0.959);
+  box-shadow: 3px 6px 40px rgba(34, 47, 59, 0.959);
 
 }
 
@@ -41,7 +40,7 @@ body{
 }
 .task-input {
   outline: none;
-  width: 260px;
+  width: 180px;
   padding: 10px;
   margin-right: 5px;
   font-size: 10px;
@@ -57,23 +56,24 @@ body{
   font-size: 12px;
   border-radius: 10px;
   border: 1px solid rgba(208, 208, 22, 0.678);
-
-  
   background-color: rgb(242, 163, 60);
   cursor: pointer;
+  flex: auto;
 }
 
 
 
-.button-complete,
-.button-delet,
-.button-edit {
+/* .button-complete, */
+.button-delet
+/* .button-edit */
+  {
   border: none;
   outline: none;
   cursor: pointer;
   background-color: transparent;
   font-size: 20px;
   border-radius: 50%;
+  justify-content: right;
 
 }
 .button-complete{
@@ -83,12 +83,12 @@ body{
   
 
 }
-.button-edit{
+/* .button-edit{
   color: rgb(208, 243, 8);
   margin-right: 1px;
   width: fit-content;
 
-}
+} */
 
 .button-delet{
   color: rgb(234, 91, 8);
@@ -96,13 +96,13 @@ body{
   width: fit-content;
 }
 
-.complete{
+/* .complete{
   text-decoration-style: solid;
   text-decoration-line: line-through;
   text-decoration-color: rgb(152, 72, 48);
-}
+} */
 .list{
-  width: 220px;
+  width: 180px;
   background-color: #969881;
   font-size: 12px;
   padding-left: 7px;
@@ -125,9 +125,11 @@ button, input, optgroup, select, textarea {
   font-family: cursive;
   font-size: inherit;
   line-height: inherit;
-  width: 241px;
+  width: 180px;
   border-radius: 5px;
   background-color:  rgb(204, 217, 227);
+
+
 }
  
 
