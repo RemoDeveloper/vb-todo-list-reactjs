@@ -31,6 +31,7 @@ const TodoList=({todos, setTodos, setEditTodo}) => {
             </button> */}
             <button className="button-delet task-button"  onClick={() => handleDelete(todo)}>
             <i className='fa fa-trash'></i>
+            
             </button>
             </div>
         </li>
